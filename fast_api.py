@@ -6,9 +6,8 @@ import shutil
 import os
 import uuid
 import random
-from actions import generate_mcqs, process_pdf
-from db_handler import SupabaseHandler
-from agent import run_agent 
+from actions import run_agent
+from db_handler import SupabaseHandler 
 
 app = FastAPI()
 db = SupabaseHandler()
