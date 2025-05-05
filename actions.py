@@ -109,7 +109,7 @@ Your tools:
 
     for _ in range(max_turns):
         completion = client.chat.completions.create(
-            model="gpt-4-1106-preview",
+            model="gpt-4",
             messages=messages,
             tools=tools,
             tool_choice="auto"
