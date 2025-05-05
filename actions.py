@@ -109,8 +109,9 @@ Your tools:
 
     for _ in range(max_turns):
         completion = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=messages
+            model="gpt-4-1-2025-04-14",
+            messages=messages,
+            tools=tools
         )
 
         response = completion.choices[0].message
@@ -148,5 +149,6 @@ Your tools:
                     return all_mcqs
 
     return all_mcqs
+
 
 
